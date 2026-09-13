@@ -6,15 +6,15 @@ from dotenv import load_dotenv
 load_dotenv()
 from logging.handlers import RotatingFileHandler
 
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-APP_ID = int(os.environ.get("APP_ID", "0"))
-API_HASH = os.environ.get("API_HASH", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8857649352:AAHvsIubxVdGI6xTWQ5f4NLsj3krx77gkrc")
+APP_ID = int(os.environ.get("APP_ID", "38751960"))
+API_HASH = os.environ.get("API_HASH", "4e8f828046a30ec70899b523bd763fa9")
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "0"))
-OWNER = os.environ.get("OWNER", "")
-OWNER_ID = int(os.environ.get("OWNER_ID", "0"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1004422224007"))
+OWNER = os.environ.get("OWNER", "7754709357")
+OWNER_ID = int(os.environ.get("OWNER_ID", "7754709357"))
 PORT = os.environ.get("PORT", "8001")
-DB_URI = os.environ.get("DATABASE_URL", "")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://tgjiro441_db_user:Tgjirosamkun@cluster0.9reqco1.mongodb.net/?appName=Cluster0")
 
 if not TG_BOT_TOKEN:
     logging.warning("TG_BOT_TOKEN is not set!")
@@ -25,13 +25,13 @@ if not API_HASH:
 if not DB_URI:
     logging.warning("DATABASE_URL is not set!")
 DB_NAME = os.environ.get("DB_NAME", "Filestore")
-FSUB_LINK_EXPIRY = int(os.getenv("FSUB_LINK_EXPIRY", "10"))
-BAN_SUPPORT = os.environ.get("BAN_SUPPORT", "https://t.me/AniReal_Chat_Group_Asia")
+FSUB_LINK_EXPIRY = int(os.getenv("FSUB_LINK_EXPIRY", "5"))
+BAN_SUPPORT = os.environ.get("BAN_SUPPORT", "https://t.me/Fix_Chat_Group")
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "200"))
 START_PIC = os.environ.get("START_PIC", "https://graph.org/file/0591ce5558c3ec8fe7612-263292508134daf3e1.jpg")
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/fdc4357abfaba23255e98-24d1bbfa3888cdfcfe.jpg")
 
-HELP_TXT = "<b>ʜᴜʜʜʜʜʜ!... ʜᴇʟᴘ? 😮‍💨</b>\n<b><blockquote>⚡ ᴛʜɪs ᴘʀɪᴠᴀᴛᴇ ᴘʀᴇᴍɪᴜᴍ ʙᴏᴛ ɪs ᴍʏ ᴘᴇʀsᴏɴᴀʟ ɢᴀʀᴅᴇɴ! ᴏɴʟʏ ᴍʏ ᴄʜᴏsᴇɴ ᴀᴅᴍɪɴs & ᴍʏ ᴅᴀʀʟɪɴɢs ᴄᴀɴ ᴛᴏᴜᴄʜ ɪᴛ. 🔐 ᴛᴏ sᴛᴇᴀʟ ᴀ ɢʟɪᴍᴘsᴇ ᴀɴᴅ ɢᴇᴛ ꜰɪʟᴇs, ᴊᴏɪɴ ᴍʏ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴀsᴋ ꜰᴏʀ ᴛʜᴇ ᴅɪʀᴇᴄᴛ ʟɪɴᴋ! 🎯 ᴛʜɪs ɪs ᴇxᴄʟᴜsɪᴠᴇʟʏ ꜰᴏʀ ʏᴏᴜ. ɢᴇᴛ ʏᴏᴜʀ ꜰɪʟᴇs sᴇᴄᴜʀᴇʟʏ, ᴀɴᴅ ᴅᴏɴ'ᴛ ᴍᴀᴋᴇ ᴍᴇ ᴡᴀɪᴛ!</blockquote></b>\n<b>• ᴊᴏɪɴ ᴍʏ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ: @Unrated_Coder\nᴡᴀɴᴛ ᴍᴏʀᴇ ᴏꜰ ᴍᴇ? ᴜsᴇ /help!</b>"
+HELP_TXT = "<b>ʜᴜʜʜʜʜʜ!... ʜᴇʟᴘ? 😮‍💨</b>\n<b><blockquote>⚡ ᴛʜɪs ᴘʀɪᴠᴀᴛᴇ ᴘʀᴇᴍɪᴜᴍ ʙᴏᴛ ɪs ᴍʏ ᴘᴇʀsᴏɴᴀʟ ɢᴀʀᴅᴇɴ! ᴏɴʟʏ ᴍʏ ᴄʜᴏsᴇɴ ᴀᴅᴍɪɴs & ᴍʏ ᴅᴀʀʟɪɴɢs ᴄᴀɴ ᴛᴏᴜᴄʜ ɪᴛ. 🔐 ᴛᴏ sᴛᴇᴀʟ ᴀ ɢʟɪᴍᴘsᴇ ᴀɴᴅ ɢᴇᴛ ꜰɪʟᴇs, ᴊᴏɪɴ ᴍʏ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴀsᴋ ꜰᴏʀ ᴛʜᴇ ᴅɪʀᴇᴄᴛ ʟɪɴᴋ! 🎯 ᴛʜɪs ɪs ᴇxᴄʟᴜsɪᴠᴇʟʏ ꜰᴏʀ ʏᴏᴜ. ɢᴇᴛ ʏᴏᴜʀ ꜰɪʟᴇs sᴇᴄᴜʀᴇʟʏ, ᴀɴᴅ ᴅᴏɴ'ᴛ ᴍᴀᴋᴇ ᴍᴇ ᴡᴀɪᴛ!</blockquote></b>\n<b>• ᴊᴏɪɴ ᴍʏ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ: @Anime_Hindi_Fix\nᴡᴀɴᴛ ᴍᴏʀᴇ ᴏꜰ ᴍᴇ? ᴜsᴇ /help!</b>"
 
 ABOUT_TXT = """<b>🤖 ɪꜱʜᴛᴀʀ ʙᴏᴛ - ᴀʙᴏᴜᴛ ᴍᴇ</b>
 <b><blockquote>💡 ᴍʏ ꜱᴛᴀᴛᴜꜱ: <code>ᴏɴʟɪɴᴇ ᴀɴᴅ ᴡᴀɪᴛɪɴɢ 24/7</code>
@@ -39,7 +39,7 @@ ABOUT_TXT = """<b>🤖 ɪꜱʜᴛᴀʀ ʙᴏᴛ - ᴀʙᴏᴜᴛ ᴍᴇ</b>
 🔗 ᴀᴄᴄᴇꜱꜱ: ɢᴇᴛ ᴛʜᴇᴍ ᴅɪʀᴇᴄᴛʟʏ ᴛʜʀᴏᴜɢʜ ᴍʏ ꜱᴘᴇᴄɪᴀʟ ʟɪɴᴋꜱ.
 ⚡ ᴜᴘᴛɪᴍᴇ: ᴀʟᴡᴀʏꜱ ᴀᴄᴛɪᴠᴇ ᴊᴜꜱᴛ ꜰᴏʀ ʏᴏᴜ.
 🌐 ᴄʜᴀɴɴᴇʟꜱ: ᴊᴏɪɴ ᴜꜱ, ᴅᴏɴ'ᴛ ʙᴇ ꜱʜʏ!</blockquote></b>
-<b><blockquote>◈ ᴄʀᴇᴀᴛᴏʀ: <a href="https://t.me/UNRATED_CODER">ᴜɴʀᴀᴛᴇᴅ ᴄᴏᴅᴇʀ</a>\n◈ ꜰᴏᴜɴᴅᴇʀ: <a href="https://t.me/UNRATED_CODER">ᴜɴʀᴀᴛᴇᴅ ᴄᴏᴅᴇʀ</a>\n◈ ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href="https://t.me/UNRATED_CODER">ᴜɴʀᴀᴛᴇᴅ ᴄᴏᴅᴇʀ</a></blockquote></b>"""
+<b><blockquote>◈ ᴄʀᴇᴀᴛᴏʀ: <a href="https://t.me/Anime_Hindi_Fix">ᴜɴʀᴀᴛᴇᴅ ᴄᴏᴅᴇʀ</a>\n◈ ꜰᴏᴜɴᴅᴇʀ: <a href="https://t.me/UNRATED_CODER">ᴜɴʀᴀᴛᴇᴅ ᴄᴏᴅᴇʀ</a>\n◈ ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href="https://t.me/Senpai_Jiro">Jiro</a></blockquote></b>"""
 START_MSG = os.environ.get("START_MESSAGE", "<b>💖 ʜᴇʟʟᴏ {first}! 🥀\n<blockquote expandable>ɪ'ᴍ ɪꜱʜᴛᴀʀ ᴛʜᴇ ɢᴏᴅᴅᴇꜱꜱ ᴏꜰ ꜰᴇʀᴛɪʟɪᴛʏ ✨ ʏᴏᴜʀ ᴘᴇʀꜱᴏɴᴀʟ ᴘʟᴀʏꜰᴜʟ ɢᴏᴅᴅᴇꜱꜱ ᴏꜰ ᴀɴɪᴍᴇ & ꜰɪʟᴇ ᴀᴄᴄᴇꜱꜱ 🚀\n\nɪ ᴄᴀɴ ꜱᴀᴠᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ɪɴ ᴄʜᴀɴɴᴇʟꜱ🔗 & ɢɪᴠᴇ ʏᴏᴜ ᴀᴄᴄᴇꜱꜱ ᴠɪᴀ ᴀ ꜱᴘᴇᴄɪᴀʟ ʟɪɴᴋ.\n\nᴅᴏɴ'ᴛ ᴋᴇᴇᴘ ᴍᴇ ᴡᴀɪᴛɪɴɢ, ᴏʀ ɪ ᴍɪɢʜᴛ ɢᴇᴛ ʙᴏʀᴇᴅ ᴀɴᴅ ᴛᴇᴀꜱᴇ ʏᴏᴜ! 😉</blockquote>\n<blockquote>🔰 ᴄʜᴇᴄᴋ ᴏᴜᴛ ᴍʏ ᴄʜᴀɴɴᴇʟꜱ & ɢᴇᴛ ʏᴏᴜʀ ꜰɪʟᴇꜱ ɪɴꜱᴛᴀɴᴛʟʏ! 🔰</blockquote></b>")
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>🚨 ᴘʟᴇᴀꜱᴇ ᴊᴏɪɴ ᴍʏ ᴄʜᴀɴɴᴇʟꜱ ꜰɪʀꜱᴛ!</b>\n<blockquote>⚡ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ, ᴍᴀᴋᴇ ꜱᴜʀᴇ ʏᴏᴜ'ᴠᴇ ᴊᴏɪɴᴇᴅ ᴀʟʟ ᴛʜᴇ ʀᴇǫᴜɪʀᴇᴅ ᴄʜᴀɴɴᴇʟꜱ ᴍᴇɴᴛɪᴏɴᴇᴅ ʙᴇʟᴏᴡ.\nᴏɴᴄᴇ ᴅᴏɴᴇ, ᴄʟɪᴄᴋ ᴛʜᴇ <b>ᴛʀʏ ᴀɢᴀɪɴ</b> ʙᴜᴛᴛᴏɴ ᴛᴏ ᴘʀᴏᴠᴇ ʏᴏᴜʀ ʟᴏʏᴀʟᴛʏ!</blockquote>\n\n<blockquote>💡<i>ɪꜰ ʏᴏᴜ'ᴇ ꜱᴛʀᴜɢɢʟɪɴɢ ʟɪᴋᴇ ᴀ ᴄʟᴜᴍꜱʏ ʜᴜᴍᴀɴ, ᴛʏᴘᴇ <code>/help</code> ᴛᴏ ᴡᴀᴛᴄʜ ᴍʏ ᴛᴜᴛᴏʀɪᴀʟ ᴀɴᴅ ꜰɪx ɪᴛ ᴇᴀꜱɪʟʏ!</i></blockquote>")
 
@@ -59,7 +59,7 @@ CMD_TXT = """<blockquote><b>» ᴀᴅᴍɪɴ'ꜱ ꜱᴇᴄʀᴇᴛ ᴛᴏʏꜱ:<
 <b>›› /deladmin :</b> ʀᴇᴍᴏᴠᴇ ᴀɴ ᴀᴅᴍɪɴ
 <b>›› /admins :</b> ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴀᴅᴍɪɴꜱ
 """
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• ʙʏ @UNRATED_CODER</b>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• ʙʏ @Anime_Hindi_Fix</b>")
 CUSTOM_DELETE_ALERT = os.environ.get("CUSTOM_DELETE_ALERT", "<b>ʏᴏᴜʀ ꜰɪʟᴇ ɪꜱ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ, ʜᴇʜᴇ! ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ᴛᴏ ʙᴇɢ ᴍᴇ ꜰᴏʀ ɪᴛ ᴀɢᴀɪɴ 👇</b>")
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False 
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
