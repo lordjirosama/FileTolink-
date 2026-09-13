@@ -70,7 +70,7 @@ from config import *
 
 
 name ="""
- BY UNRATED CODER
+ BY Anime Hindi Fix
 """
 
 
