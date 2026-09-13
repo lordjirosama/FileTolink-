@@ -107,12 +107,12 @@ class Bot(Client):
             self.LOGGER(__name__).warning("CHANNEL_ID is not set. Bot will not be able to store/retrieve files.")
 
         self.set_parse_mode(ParseMode.HTML)
-        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \n@UNRATED_CODER")
-        self.LOGGER(__name__).info(f"""BOT DEPLOYED BY @UNRATED_CODER""")
+        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \n@Anime_Hindi_Fix")
+        self.LOGGER(__name__).info(f"""BOT DEPLOYED BY @Anime_Hindi_Fix""")
 
         self.set_parse_mode(ParseMode.HTML)
         self.username = usr_bot_me.username
-        self.LOGGER(__name__).info(f"Bot Running..! Made by @UNRATED_CODER")
+        self.LOGGER(__name__).info(f"Bot Running..! Made by @Anime_Hindi_Fix")
 
 
         try:
