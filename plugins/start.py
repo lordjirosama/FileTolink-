@@ -192,11 +192,11 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton('ᴀɴɪᴍᴇꜱ', url='https://t.me/UNRATED_CODER', style="primary"),
-                InlineKeyboardButton('ʙᴀꜱᴇ', url='https://t.me/UNRATED_CODER', style="primary")],
+                [InlineKeyboardButton('ᴀɴɪᴍᴇꜱ', url='https://t.me/Anime_Hindi_Fix', style="primary"),
+                InlineKeyboardButton('ʙᴀꜱᴇ', url='https://t.me/Anime_Hindi_Fix', style="primary")],
                 [InlineKeyboardButton('• ᴀʙᴏᴜᴛ', callback_data='about', style="primary"),
                 InlineKeyboardButton(' ʜᴇʟᴘ •', callback_data='help', style="primary")],
-                [InlineKeyboardButton("ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ", url='https://t.me/UNRATED_CODER', style="success")]
+                [InlineKeyboardButton("ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ", url='https://t.me/Anime_Hindi_Fix', style="success")]
             ]
         )
         caption = START_MSG
@@ -274,7 +274,7 @@ async def not_joined(client: Client, message: Message):
                 except Exception as e:
                     print(f"Error with chat {chat_id}: {e}")
                     return await temp.edit(
-                        f"<b><i>! Eʀʀᴏʀ, Cᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴛᴏ sᴏʟᴠᴇ ᴛʜᴇ ɪssᴜᴇs @UNRATED_CODER</i></b>\n"
+                        f"<b><i>! Eʀʀᴏʀ, Cᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴛᴏ sᴏʟᴠᴇ ᴛʜᴇ ɪssᴜᴇs @Anime_Hindi_Fix</i></b>\n"
                         f"<blockquote expandable><b>Rᴇᴀsᴏɴ:</b> {e}</blockquote>"
                     )
 
