@@ -6,15 +6,15 @@ from dotenv import load_dotenv
 load_dotenv()
 from logging.handlers import RotatingFileHandler
 
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8857649352:AAHvsIubxVdGI6xTWQ5f4NLsj3krx77gkrc")
-APP_ID = int(os.environ.get("APP_ID", "38751960"))
-API_HASH = os.environ.get("API_HASH", "4e8f828046a30ec70899b523bd763fa9")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+APP_ID = int(os.environ.get("APP_ID", ""))
+API_HASH = os.environ.get("API_HASH", "")
 
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1004422224007"))
 OWNER = os.environ.get("OWNER", "7754709357")
 OWNER_ID = int(os.environ.get("OWNER_ID", "7754709357"))
 PORT = os.environ.get("PORT", "8001")
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://tgjiro441_db_user:Tgjirosamkun@cluster0.9reqco1.mongodb.net/?appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "0")
 
 if not TG_BOT_TOKEN:
     logging.warning("TG_BOT_TOKEN is not set!")
